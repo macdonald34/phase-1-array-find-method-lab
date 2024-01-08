@@ -1,6 +1,19 @@
-const superblowwin () = [
-    { year: "2022", result "W"},
-    { year: "2021", result "D"},
-    { year:"2020", result "L"}
+// code your solution here
+const record = [
+    { year: "2015", result: "W"},
+    { year: "2014", result: "N/A"},
+    { year: "2013", result: "L"},
+    
+];
+function superbowlWin(record){
+    let result =record.find(winner =>winner.result === "W")
 
-]
+    if(result){
+        return result.year;
+    }
+    else{
+        return undefined
+    }
+
+}
+console.log(superbowlWin(record));
